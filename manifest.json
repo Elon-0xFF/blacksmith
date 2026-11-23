@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "LlamaUI 对话备份导出",
+  "version": "1.0.0",
+  "description": "一键把 llama.cpp WebUI 中的对话（IndexedDB：LlamaUi）导出为 Markdown 文件。",
+  "permissions": ["scripting", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "导出 LlamaUI 对话为 Markdown"
+  },
+  "commands": {
+    "export-llamaui": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+E",
+        "mac": "Command+Shift+E"
+      },
+      "description": "导出 LlamaUI 对话为 Markdown"
+    }
+  }
+}
