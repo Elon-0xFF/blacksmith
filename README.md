@@ -218,5 +218,3 @@ chrome.runtime.onInstalled.addListener(function () {
 > **Note:** `host_permissions` already covers all `localhost` / `127.0.0.1` ports. If your WebUI is served from a different origin, add that origin to both `host_permissions` and `content_scripts.matches` in `manifest.json`.
 
 ---
-
-内容由 AI 生成
